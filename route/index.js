@@ -28,7 +28,7 @@ Generator.prototype.rewriteAppJs = function () {
   }
   else {
     angularUtils.rewriteFile({
-      file: path.join(this.env.options.appPath, 'scripts/app.js'),
+      file: path.join(this.env.options.appPath, 'app.js'),
       needle: '.otherwise',
       splicable: [
         '.when(\'/' + this.name + '\', {',
